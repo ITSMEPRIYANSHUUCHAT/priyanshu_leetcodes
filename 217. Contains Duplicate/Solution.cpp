@@ -4,11 +4,11 @@ public:
         map<int,int> mpp;
         for(auto it:nums)
         {
-            mpp[it]++;
-            if(mpp[it]>1)
+            if(mpp[it]>0)
             return true;
+            else
+            mpp[it]++;
         }
-        mpp.clear();
         return false ;
     }
 };
